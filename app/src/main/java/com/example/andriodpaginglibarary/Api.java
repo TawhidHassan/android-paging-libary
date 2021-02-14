@@ -6,7 +6,7 @@ import retrofit2.http.Query;
 
 public interface Api {
     @GET("answers")
-    Call<StackApiResponse>getApiAnswers(
+    Call<StackApiResponse>getAnswers(
             @Query("page") int page,
             @Query("pagesize") int size,
             @Query("site") String site
